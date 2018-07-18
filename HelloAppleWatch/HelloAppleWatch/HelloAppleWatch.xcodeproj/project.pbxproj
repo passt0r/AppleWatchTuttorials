@@ -234,7 +234,6 @@
 				TargetAttributes = {
 					40E08A521B4FC70400D06A21 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 2J5NKCM3ET;
 						LastSwiftMigration = 0800;
 					};
 					5951226F20FFCB1800FC8048 = {
@@ -450,7 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2J5NKCM3ET;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HelloAppleWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.passt0r.HelloAppleWatch;
@@ -463,7 +462,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2J5NKCM3ET;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HelloAppleWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.passt0r.HelloAppleWatch;
