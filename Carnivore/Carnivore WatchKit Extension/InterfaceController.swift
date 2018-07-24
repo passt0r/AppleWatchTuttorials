@@ -25,15 +25,15 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     @IBOutlet var timer: WKInterfaceTimer!
-    @IBOutlet var weightLabel: WKInterfaceLabel!
     
+    @IBOutlet var temleratureLabel: WKInterfaceLabel!
     @IBOutlet var timerButton: WKInterfaceButton!
-    @IBOutlet var cookLabel: WKInterfaceLabel!
+    @IBOutlet var weightPicker: WKInterfacePicker!
+    @IBOutlet var temperaturePicker: WKInterfacePicker!
     
     var ounces = 16
     var cookTemp = MeatTemperature.medium
     var timerRunning = false
-    var usingMetric = false
     
     @IBAction func onTimerButton() {
         if timerRunning {
@@ -48,47 +48,35 @@ class InterfaceController: WKInterfaceController {
         }
         timerRunning = !timerRunning
     }
-    @IBAction func onMinusButton() {
-        if ounces > 0 {
-            ounces -= 1
-            updateConfiguration()
-        }
-    }
-    @IBAction func onPlusButton() {
-        if ounces < 40 {
-            ounces += 1
-            updateConfiguration()
-        }
-    }
-    
-    @IBAction func onTempChange(_ value: Float) {
-        if let temp = MeatTemperature(rawValue: Int(value)) {
-            cookTemp = temp
-            updateConfiguration()
-        }
-    }
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        updateConfiguration()
-    }
-    
-    func updateConfiguration() {
-        cookLabel.setText(cookTemp.stringValue)
-        var weight = ounces
-        var unit = "oz"
-        
-        if usingMetric {
-            let grams = Double(ounces) * 28.3495
-            weight = Int(grams)
-            unit = "gm"
+        var weightItems: [WKPickerItem] = []
+        for i in 1...32 {
+            let item = WKPickerItem()
+            item.title = String(i)
+            weightItems.append(item)
         }
-        weightLabel.setText("Weight: \(weight) \(unit)")
+        weightPicker.setItems(weightItems)
+        weightPicker.setSelectedItemIndex(ounces - 1)
+        
+        var tempItems: [WKPickerItem] = []
+        for i in 1...4 {
+            let item = WKPickerItem()
+            item.contentImage = WKImage(imageName: "temp-\(i)")
+            tempItems.append(item)
+        }
+        temperaturePicker.setItems(tempItems)
+        onTemperatureChanged(0)
+    }
+    @IBAction func onWeightChanged(_ value: Int) {
+        ounces = value + 1
     }
     
-    @IBAction func onMetricChanged(_ value: Bool) {
-        usingMetric = value
-        updateConfiguration()
+    @IBAction func onTemperatureChanged(_ value: Int) {
+        let temp = MeatTemperature(rawValue: value)!
+        cookTemp = temp
+        temleratureLabel.setText(temp.stringValue)
     }
     
 }

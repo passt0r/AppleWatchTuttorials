@@ -27,46 +27,25 @@
                                 </button>
                             </items>
                         </group>
-                        <label alignment="center" text="Weight: 16 oz" id="9QK-76-qbm"/>
-                        <group width="1" alignment="left" spacing="20" id="HOd-d1-HQe">
-                            <items>
-                                <button alignment="center" backgroundImage="minus" id="hKF-oZ-bjc">
-                                    <connections>
-                                        <action selector="onMinusButton" destination="AgC-eL-Hgc" id="WX5-Ii-bqp"/>
-                                    </connections>
-                                </button>
-                                <button alignment="center" backgroundImage="plus" id="0sR-rk-lbA">
-                                    <connections>
-                                        <action selector="onPlusButton" destination="AgC-eL-Hgc" id="gBS-ka-2VS"/>
-                                    </connections>
-                                </button>
-                            </items>
-                        </group>
-                        <group width="1" alignment="left" layout="vertical" id="279-j4-edP">
-                            <items>
-                                <label alignment="center" text="Label" id="H87-5s-RIM"/>
-                                <slider width="1" alignment="left" value="2" maximum="3" steps="3" id="e6N-hx-nYZ">
-                                    <connections>
-                                        <action selector="onTempChange:" destination="AgC-eL-Hgc" id="pBz-ad-8nC"/>
-                                    </connections>
-                                </slider>
-                                <group width="1" alignment="left" id="aD5-f4-BG2">
-                                    <items>
-                                        <switch width="1" alignment="left" title="Metric" id="LIg-px-h6c">
-                                            <connections>
-                                                <action selector="onMetricChanged:" destination="AgC-eL-Hgc" id="0R5-dl-8rz"/>
-                                            </connections>
-                                        </switch>
-                                    </items>
-                                </group>
-                            </items>
-                        </group>
+                        <label alignment="center" text="Weight (oz)" id="7BX-K8-p8b"/>
+                        <picker height="55" alignment="left" focusStyle="stack" id="DkF-Al-B2X">
+                            <connections>
+                                <action selector="onWeightChanged:" destination="AgC-eL-Hgc" id="NQ5-ot-Bcr"/>
+                            </connections>
+                        </picker>
+                        <label alignment="center" text="Label" id="1rq-a5-9QA"/>
+                        <picker height="100" alignment="left" style="sequence" focusStyle="stack" id="IIb-Vu-dY2">
+                            <connections>
+                                <action selector="onTemperatureChanged:" destination="AgC-eL-Hgc" id="vYn-dh-87j"/>
+                            </connections>
+                        </picker>
                     </items>
                     <connections>
-                        <outlet property="cookLabel" destination="H87-5s-RIM" id="UQq-A4-lcV"/>
+                        <outlet property="temleratureLabel" destination="1rq-a5-9QA" id="GJA-Np-sOd"/>
+                        <outlet property="temperaturePicker" destination="IIb-Vu-dY2" id="hIc-Kw-p2z"/>
                         <outlet property="timer" destination="wxd-hT-sLU" id="1ib-Mg-SP6"/>
                         <outlet property="timerButton" destination="047-zR-gNK" id="cCU-w8-PcT"/>
-                        <outlet property="weightLabel" destination="9QK-76-qbm" id="GQN-eT-rBi"/>
+                        <outlet property="weightPicker" destination="DkF-Al-B2X" id="LtT-hf-TII"/>
                     </connections>
                 </controller>
             </objects>
