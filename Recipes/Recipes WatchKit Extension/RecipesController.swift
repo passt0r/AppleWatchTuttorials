@@ -24,7 +24,44 @@ import Foundation
 import WatchKit
 
 class RecipesController: WKInterfaceController {
-
-  
-
+    @IBOutlet var table: WKInterfaceTable!
+    let recipeStore = RecipeStore()
+    let rowType = "RecipeRowType"
+    
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
+        
+        var map = [String: [Recipe]]()
+        for recipe in recipeStore.recipes {
+            var arr = map[recipe.type] ?? [Recipe]()
+            arr.append(recipe)
+            map[recipe.type] = arr
+        }
+        for (type, recipes) in map {
+            add(withType: type, recipes: recipes)
+        }
+    }
+    
+    func add(withType type: String, recipes: [Recipe]) {
+        let rows = table.numberOfRows
+        table.insertRows(at: IndexSet(integer: rows), withRowType: "HeaderRowType")
+        let itemRows = NSIndexSet(indexesIn: NSRange(location: rows + 1, length: recipes.count)) as IndexSet
+        table.insertRows(at: itemRows, withRowType: "RecipeRowType")
+        
+        for rowIndex in rows..<table.numberOfRows {
+            let controller = table.rowController(at: rowIndex)
+            if let controller = controller as? HeaderRowController {
+                controller.image.setImageNamed(type.lowercased())
+                controller.label.setText(type)
+            } else if let controller = controller as? RecipeRowController {
+                let recipe = recipes[rowIndex - rows - 1]
+                controller.titleLabel.setText(recipe.name)
+                controller.ingredientsLabel.setText("\(recipe.ingredients.count)ingredients")
+            }
+        }
+    }
+    
+    override func contextForSegue(withIdentifier segueIdentifier: String, in table: WKInterfaceTable, rowIndex: Int) -> Any? {
+        return recipeStore.recipes[rowIndex]
+    }
 }
