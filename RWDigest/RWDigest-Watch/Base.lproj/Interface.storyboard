@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11129.15" systemVersion="16A201w" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055.6"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RWDigest_Watch" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="J9W-c0-zpT">
+                            <items>
+                                <tableRow identifier="TextLabelRowIdentifier" id="fjc-bd-lQq" customClass="TextLabelRowController" customModule="RWDigest_Watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" radius="4" id="2cg-lO-ua0">
+                                        <items>
+                                            <label width="1" alignment="center" verticalAlignment="center" text="Title" textAlignment="left" numberOfLines="0" id="5dI-Yc-wMf">
+                                                <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                            </label>
+                                        </items>
+                                        <edgeInsets key="margins" left="2" right="2" top="5" bottom="8"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="5dI-Yc-wMf" id="Bzz-cB-BQw"/>
+                                        <segue destination="HY5-px-0f1" kind="push" identifier="StoryInterfaceSegue" id="oEM-Gg-NgG"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="interfaceTable" destination="J9W-c0-zpT" id="rZj-Na-pLU"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--StoryInterfaceController-->
+        <scene sceneID="5hH-d9-xfF">
+            <objects>
+                <controller identifier="StoryInterfaceController" hidesWhenLoading="NO" id="HY5-px-0f1" customClass="StoryInterfaceController" customModule="RWDigest_Watch_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Title" textAlignment="left" numberOfLines="0" id="3HY-BC-fuO">
+                            <color key="textColor" red="0.0" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                        </label>
+                        <label width="1" height="1" alignment="left" text="Brief" textAlignment="left" numberOfLines="0" id="dMg-rA-EAS">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <separator width="1" alignment="center" id="s3a-yJ-OyY"/>
+                        <label width="1" alignment="left" text="Use Handoff to read more on your iPhone!" textAlignment="left" numberOfLines="0" id="J3V-98-aj6" userLabel="Instruction">
+                            <color key="textColor" red="1" green="0.5" blue="0.0" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="briefLabel" destination="dMg-rA-EAS" id="TPJ-3a-mpy"/>
+                        <outlet property="titleLabel" destination="3HY-BC-fuO" id="ZVs-dY-FTs"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="326" y="131"/>
+        </scene>
+    </scenes>
+</document>

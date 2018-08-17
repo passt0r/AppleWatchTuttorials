@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Model-View-Controller (MVC) in iOS: A Modern Approach</key>
+	<dict>
+		<key>StoryID</key>
+		<string>RWNL2016062801</string>
+		<key>Brief</key>
+		<string>Model-View-Controller, or MVC, is one of the most common design patterns in iOS development. Unfortunately, it&apos;s often misunderstood and applying it incorrectly can result in code smells like &quot;massive view controller&quot;. In this new article, Rui Peres shares some tips and tricks he&apos;s learned on designing clean architecture with MVC.</string>
+		<key>Link</key>
+		<string>https://www.raywenderlich.com/132662/mvc-in-ios-a-modern-approach</string>
+		<key>Date</key>
+		<string>2016-06-28</string>
+	</dict>
+	<key>Top 10 WWDC 2016 Videos</key>
+	<dict>
+		<key>StoryID</key>
+		<string>RWNL2016062802</string>
+		<key>Brief</key>
+		<string>Did you know there are 120 WWDC videos available this year? Most people don&apos;t have time to watch them all. That&apos;s why Tim Mitra put together this post of what we consider the Top 10 WWDC videos for developers to watch.</string>
+		<key>Link</key>
+		<string>https://www.raywenderlich.com/137833/top-10-wwdc-2016-videos</string>
+		<key>Date</key>
+		<string>2016-06-28</string>
+	</dict>
+	<key>What’s New In SpriteKit on iOS 10: A Look At Tile Maps</key>
+	<dict>
+		<key>StoryID</key>
+		<string>RWNL2016062803</string>
+		<key>Brief</key>
+		<string>This year at WWDC, Apple announced a SpriteKit feature developers have been wishing for since day one: tile map support! Learn how it works by making a game called &quot;Rubber Duckie Rescue&quot;.</string>
+		<key>Link</key>
+		<string>https://www.raywenderlich.com/137216/whats-new-spritekit-ios-10-look-tile-maps</string>
+		<key>Date</key>
+		<string>2016-06-28</string>
+	</dict>
+	<key>How to Submit An App to Apple: From No Account to App Store</key>
+	<dict>
+		<key>StoryID</key>
+		<string>RWNL2016062804</string>
+		<key>Brief</key>
+		<string>When you&apos;re first starting as an iOS developer, the steps it takes to upload your first app to the App Store can feel intimidating. To help with this, check out this detailed guide that walks you through every step - with screenshots.</string>
+		<key>Link</key>
+		<string>https://www.raywenderlich.com/127936/submit-an-app-part-1</string>
+		<key>Date</key>
+		<string>2016-06-28</string>
+	</dict>
+	<key>WWDC ’16 Review: iOS 10, and watchOS 3 – Podcast S06 E02</key>
+	<dict>
+		<key>StoryID</key>
+		<string>RWNL2016062805</string>
+		<key>Brief</key>
+		<string>Join Mic, Jake, and Greg as they discuss WWDC 2016 and what it means for developers - along with watchOS 3 and if it will have folks returning to their Apple Watches.</string>
+		<key>Link</key>
+		<string>https://www.raywenderlich.com/137817/podcast-s06-e02</string>
+		<key>Date</key>
+		<string>2016-06-28</string>
+	</dict>
+	<key>iOS 10 Screencast: The UserNotifications Framework</key>
+	<dict>
+		<key>StoryID</key>
+		<string>RWNL2016062806</string>
+		<key>Brief</key>
+		<string>iOS 10 brings some big changes to notifications: there&apos;s a brand new UserNotifications framework that unifies local and remote notifications into a single API. Learn how to update your apps to use this new framework in this screencast - the first in our iOS 10 screencast collection.</string>
+		<key>Link</key>
+		<string>https://www.raywenderlich.com/137830/ios-10-screencast-usernotifications-framework</string>
+		<key>Date</key>
+		<string>2016-06-28</string>
+	</dict>
+	<key>Screencast: Beginning C#: Intro</key>
+	<dict>
+		<key>StoryID</key>
+		<string>RWNL2016062807</string>
+		<key>Brief</key>
+		<string>Unity is a popular game engine used by many popular games, such as Hearthstone, Monument Valley, Pillars of Eternity, and more. Learning Unity can feel intimidating, because you need to learn a lot of things, including programming in a language supported by Unity, such as C#. 
+
+Luckily, Brian Moakley is creating a brand new screencast series to help with that. It&apos;s a series on how to program in C# with Unity - for complete beginners. Best of all, the series is 100% free!</string>
+		<key>Link</key>
+		<string>https://www.raywenderlich.com/137943/screencast-beginning-c-part-0-introduction</string>
+		<key>Date</key>
+		<string>2016-06-28</string>
+	</dict>
+	<key>Video Tutorial: MapKit and Core Location</key>
+	<dict>
+		<key>StoryID</key>
+		<string>RWNL2016062808</string>
+		<key>Brief</key>
+		<string>Our epic 10-part MapKit and Core Location video tutorial series is now complete! The series has covered background updates, geocoding, region monitoring, annotations, overlays, directions, and more.</string>
+		<key>Link</key>
+		<string>https://www.raywenderlich.com/136402/video-tutorial-mapkit-core-location-series-introduction</string>
+		<key>Date</key>
+		<string>2016-06-28</string>
+	</dict>
+	<key>WWDC 2016 Initial Impressions</key>
+	<dict>
+		<key>StoryID</key>
+		<string>RWNL2016062101</string>
+		<key>Brief</key>
+		<string>There was a lot announced at WWDC this year, and if you weren&apos;t paying close attention it could be easy to miss something. Chris Wagner put together this great post that shares some of his personal highlights and reactions.</string>
+		<key>Link</key>
+		<string>https://www.raywenderlich.com/136657/wwdc-2016-initial-impressions</string>
+		<key>Date</key>
+		<string>2016-06-21</string>
+	</dict>
+	<key>What&apos;s New in Swift 3</key>
+	<dict>
+		<key>StoryID</key>
+		<string>RWNL2016062102</string>
+		<key>Brief</key>
+		<string>Similarly, if you haven&apos;t been following the Swift 3 evolution project closely, you may be wondering what&apos;s new in Swift 3, and how to prepare. That&apos;s what this handy overview by Ben Morrow is all about.</string>
+		<key>Link</key>
+		<string>http://www.raywenderlich.com/92972/paintcode-tutorial-for-developers-getting-started</string>
+		<key>Date</key>
+		<string>2016-06-21</string>
+	</dict>
+</dict>
+</plist>

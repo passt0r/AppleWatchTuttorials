@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B38630F1B402ED900613B81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B38630E1B402ED900613B81 /* Main.storyboard */; };
+		4B3863131B40350E00613B81 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3863121B40350E00613B81 /* StoryViewController.swift */; };
+		4B3863151B4048D700613B81 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3863141B4048D700613B81 /* Helpers.swift */; };
+		4B38639A1B4083C700613B81 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3863981B4083C700613B81 /* Interface.storyboard */; };
+		4B38639C1B4083C700613B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B38639B1B4083C700613B81 /* Assets.xcassets */; };
+		4B3863A31B4083C700613B81 /* RWDigest-Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4B3863A21B4083C700613B81 /* RWDigest-Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4B3863A81B4083C700613B81 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3863A71B4083C700613B81 /* InterfaceController.swift */; };
+		4B3863AA1B4083C700613B81 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3863A91B4083C700613B81 /* ExtensionDelegate.swift */; };
+		4B3863AC1B4083C700613B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3863AB1B4083C700613B81 /* Assets.xcassets */; };
+		4B3863B01B4083C700613B81 /* RWDigest-Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4B3863961B4083C700613B81 /* RWDigest-Watch.app */; };
+		4B4CD26B1B4026E200501351 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4CD26A1B4026E200501351 /* NewsViewController.swift */; };
+		4B6A50951B3EE2BF007F3FB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A50941B3EE2BF007F3FB7 /* AppDelegate.swift */; };
+		4B6A509C1B3EE2BF007F3FB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B6A509B1B3EE2BF007F3FB7 /* Assets.xcassets */; };
+		4B6A509F1B3EE2BF007F3FB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6A509D1B3EE2BF007F3FB7 /* LaunchScreen.storyboard */; };
+		4BCE27361B40905E0032A952 /* TextLabelRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCE27351B40905E0032A952 /* TextLabelRowController.swift */; };
+		4BCE27381B40920A0032A952 /* StoryInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCE27371B40920A0032A952 /* StoryInterfaceController.swift */; };
+		4BF6847F1B8562CF00A0B68D /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF6847A1B8562CF00A0B68D /* Binder.swift */; };
+		4BF684801B8562CF00A0B68D /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF6847A1B8562CF00A0B68D /* Binder.swift */; };
+		4BF684811B8562CF00A0B68D /* Content.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BF6847B1B8562CF00A0B68D /* Content.plist */; };
+		4BF684821B8562CF00A0B68D /* Content.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BF6847B1B8562CF00A0B68D /* Content.plist */; };
+		4BF684831B8562CF00A0B68D /* ContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF6847C1B8562CF00A0B68D /* ContentProvider.swift */; };
+		4BF684841B8562CF00A0B68D /* ContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF6847C1B8562CF00A0B68D /* ContentProvider.swift */; };
+		4BF684851B8562CF00A0B68D /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF6847D1B8562CF00A0B68D /* News.swift */; };
+		4BF684861B8562CF00A0B68D /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF6847D1B8562CF00A0B68D /* News.swift */; };
+		4BF684871B8562CF00A0B68D /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF6847E1B8562CF00A0B68D /* Story.swift */; };
+		4BF684881B8562CF00A0B68D /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF6847E1B8562CF00A0B68D /* Story.swift */; };
+		59190F0921274B7200C087EC /* HandoffHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59190F0821274B7200C087EC /* HandoffHelper.swift */; };
+		59190F0A21274B7200C087EC /* HandoffHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59190F0821274B7200C087EC /* HandoffHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B3863A41B4083C700613B81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B6A50891B3EE2BF007F3FB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B3863A11B4083C700613B81;
+			remoteInfo = "RWDigest-Watch Extension";
+		};
+		4B3863AE1B4083C700613B81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B6A50891B3EE2BF007F3FB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B3863951B4083C700613B81;
+			remoteInfo = "RWDigest-Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4B18FC9A1B3F932300ED5F0C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3863B41B4083C700613B81 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4B3863A31B4083C700613B81 /* RWDigest-Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3863B81B4083C700613B81 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4B3863B01B4083C700613B81 /* RWDigest-Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4B38630E1B402ED900613B81 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4B3863121B40350E00613B81 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		4B3863141B4048D700613B81 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		4B3863961B4083C700613B81 /* RWDigest-Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RWDigest-Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3863991B4083C700613B81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		4B38639B1B4083C700613B81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B38639D1B4083C700613B81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B3863A21B4083C700613B81 /* RWDigest-Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RWDigest-Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3863A71B4083C700613B81 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		4B3863A91B4083C700613B81 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		4B3863AB1B4083C700613B81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B3863AD1B4083C700613B81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B4CD26A1B4026E200501351 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsViewController.swift; path = RWDigest/NewsViewController.swift; sourceTree = SOURCE_ROOT; };
+		4B6A50911B3EE2BF007F3FB7 /* RWDigest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWDigest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B6A50941B3EE2BF007F3FB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B6A509B1B3EE2BF007F3FB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B6A509E1B3EE2BF007F3FB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B6A50A01B3EE2BF007F3FB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BCE27351B40905E0032A952 /* TextLabelRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextLabelRowController.swift; sourceTree = "<group>"; };
+		4BCE27371B40920A0032A952 /* StoryInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryInterfaceController.swift; sourceTree = "<group>"; };
+		4BF6847A1B8562CF00A0B68D /* Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
+		4BF6847B1B8562CF00A0B68D /* Content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Content.plist; sourceTree = "<group>"; };
+		4BF6847C1B8562CF00A0B68D /* ContentProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentProvider.swift; sourceTree = "<group>"; };
+		4BF6847D1B8562CF00A0B68D /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		4BF6847E1B8562CF00A0B68D /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		59190F0821274B7200C087EC /* HandoffHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandoffHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B38639F1B4083C700613B81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6A508E1B3EE2BF007F3FB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B3863971B4083C700613B81 /* RWDigest-Watch */ = {
+			isa = PBXGroup;
+			children = (
+				4B3863981B4083C700613B81 /* Interface.storyboard */,
+				4B38639B1B4083C700613B81 /* Assets.xcassets */,
+				4B38639D1B4083C700613B81 /* Info.plist */,
+			);
+			path = "RWDigest-Watch";
+			sourceTree = "<group>";
+		};
+		4B3863A61B4083C700613B81 /* RWDigest-Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4B3863A91B4083C700613B81 /* ExtensionDelegate.swift */,
+				4B3863A71B4083C700613B81 /* InterfaceController.swift */,
+				4BCE27371B40920A0032A952 /* StoryInterfaceController.swift */,
+				4BCE27351B40905E0032A952 /* TextLabelRowController.swift */,
+				4B3863AB1B4083C700613B81 /* Assets.xcassets */,
+				4B3863AD1B4083C700613B81 /* Info.plist */,
+			);
+			path = "RWDigest-Watch Extension";
+			sourceTree = "<group>";
+		};
+		4B6A50881B3EE2BF007F3FB7 = {
+			isa = PBXGroup;
+			children = (
+				59190F0721274B4800C087EC /* Handoff */,
+				4BF684791B8562CF00A0B68D /* Shared */,
+				4B6A50931B3EE2BF007F3FB7 /* RWDigest */,
+				4B3863971B4083C700613B81 /* RWDigest-Watch */,
+				4B3863A61B4083C700613B81 /* RWDigest-Watch Extension */,
+				4B6A50921B3EE2BF007F3FB7 /* Products */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		4B6A50921B3EE2BF007F3FB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B6A50911B3EE2BF007F3FB7 /* RWDigest.app */,
+				4B3863961B4083C700613B81 /* RWDigest-Watch.app */,
+				4B3863A21B4083C700613B81 /* RWDigest-Watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B6A50931B3EE2BF007F3FB7 /* RWDigest */ = {
+			isa = PBXGroup;
+			children = (
+				4B6A50941B3EE2BF007F3FB7 /* AppDelegate.swift */,
+				4B4CD26A1B4026E200501351 /* NewsViewController.swift */,
+				4B3863121B40350E00613B81 /* StoryViewController.swift */,
+				4B3863141B4048D700613B81 /* Helpers.swift */,
+				4B38630E1B402ED900613B81 /* Main.storyboard */,
+				4B6A509B1B3EE2BF007F3FB7 /* Assets.xcassets */,
+				4B6A509D1B3EE2BF007F3FB7 /* LaunchScreen.storyboard */,
+				4B6A50A01B3EE2BF007F3FB7 /* Info.plist */,
+			);
+			path = RWDigest;
+			sourceTree = "<group>";
+		};
+		4BF684791B8562CF00A0B68D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4BF6847A1B8562CF00A0B68D /* Binder.swift */,
+				4BF6847B1B8562CF00A0B68D /* Content.plist */,
+				4BF6847C1B8562CF00A0B68D /* ContentProvider.swift */,
+				4BF6847D1B8562CF00A0B68D /* News.swift */,
+				4BF6847E1B8562CF00A0B68D /* Story.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		59190F0721274B4800C087EC /* Handoff */ = {
+			isa = PBXGroup;
+			children = (
+				59190F0821274B7200C087EC /* HandoffHelper.swift */,
+			);
+			path = Handoff;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B3863951B4083C700613B81 /* RWDigest-Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B3863B51B4083C700613B81 /* Build configuration list for PBXNativeTarget "RWDigest-Watch" */;
+			buildPhases = (
+				4B3863941B4083C700613B81 /* Resources */,
+				4B3863B41B4083C700613B81 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B3863A51B4083C700613B81 /* PBXTargetDependency */,
+			);
+			name = "RWDigest-Watch";
+			productName = "RWDigest-Watch";
+			productReference = 4B3863961B4083C700613B81 /* RWDigest-Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		4B3863A11B4083C700613B81 /* RWDigest-Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B3863B11B4083C700613B81 /* Build configuration list for PBXNativeTarget "RWDigest-Watch Extension" */;
+			buildPhases = (
+				4B38639E1B4083C700613B81 /* Sources */,
+				4B38639F1B4083C700613B81 /* Frameworks */,
+				4B3863A01B4083C700613B81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RWDigest-Watch Extension";
+			productName = "RWDigest-Watch Extension";
+			productReference = 4B3863A21B4083C700613B81 /* RWDigest-Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		4B6A50901B3EE2BF007F3FB7 /* RWDigest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B6A50A31B3EE2BF007F3FB7 /* Build configuration list for PBXNativeTarget "RWDigest" */;
+			buildPhases = (
+				4B6A508D1B3EE2BF007F3FB7 /* Sources */,
+				4B6A508E1B3EE2BF007F3FB7 /* Frameworks */,
+				4B6A508F1B3EE2BF007F3FB7 /* Resources */,
+				4B18FC9A1B3F932300ED5F0C /* Embed Frameworks */,
+				4B3863B81B4083C700613B81 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B3863AF1B4083C700613B81 /* PBXTargetDependency */,
+			);
+			name = RWDigest;
+			productName = rwdigest;
+			productReference = 4B6A50911B3EE2BF007F3FB7 /* RWDigest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B6A50891B3EE2BF007F3FB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = www.razeware.com;
+				TargetAttributes = {
+					4B3863951B4083C700613B81 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					4B3863A11B4083C700613B81 = {
+						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
+					};
+					4B6A50901B3EE2BF007F3FB7 = {
+						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 4B6A508C1B3EE2BF007F3FB7 /* Build configuration list for PBXProject "RWDigest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B6A50881B3EE2BF007F3FB7;
+			productRefGroup = 4B6A50921B3EE2BF007F3FB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B6A50901B3EE2BF007F3FB7 /* RWDigest */,
+				4B3863951B4083C700613B81 /* RWDigest-Watch */,
+				4B3863A11B4083C700613B81 /* RWDigest-Watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B3863941B4083C700613B81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B38639C1B4083C700613B81 /* Assets.xcassets in Resources */,
+				4B38639A1B4083C700613B81 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3863A01B4083C700613B81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BF684821B8562CF00A0B68D /* Content.plist in Resources */,
+				4B3863AC1B4083C700613B81 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6A508F1B3EE2BF007F3FB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B38630F1B402ED900613B81 /* Main.storyboard in Resources */,
+				4B6A509F1B3EE2BF007F3FB7 /* LaunchScreen.storyboard in Resources */,
+				4BF684811B8562CF00A0B68D /* Content.plist in Resources */,
+				4B6A509C1B3EE2BF007F3FB7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B38639E1B4083C700613B81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59190F0A21274B7200C087EC /* HandoffHelper.swift in Sources */,
+				4BF684841B8562CF00A0B68D /* ContentProvider.swift in Sources */,
+				4B3863AA1B4083C700613B81 /* ExtensionDelegate.swift in Sources */,
+				4BCE27361B40905E0032A952 /* TextLabelRowController.swift in Sources */,
+				4BCE27381B40920A0032A952 /* StoryInterfaceController.swift in Sources */,
+				4BF684861B8562CF00A0B68D /* News.swift in Sources */,
+				4BF684801B8562CF00A0B68D /* Binder.swift in Sources */,
+				4B3863A81B4083C700613B81 /* InterfaceController.swift in Sources */,
+				4BF684881B8562CF00A0B68D /* Story.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6A508D1B3EE2BF007F3FB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59190F0921274B7200C087EC /* HandoffHelper.swift in Sources */,
+				4BF684831B8562CF00A0B68D /* ContentProvider.swift in Sources */,
+				4B3863151B4048D700613B81 /* Helpers.swift in Sources */,
+				4B3863131B40350E00613B81 /* StoryViewController.swift in Sources */,
+				4B6A50951B3EE2BF007F3FB7 /* AppDelegate.swift in Sources */,
+				4BF684851B8562CF00A0B68D /* News.swift in Sources */,
+				4BF6847F1B8562CF00A0B68D /* Binder.swift in Sources */,
+				4B4CD26B1B4026E200501351 /* NewsViewController.swift in Sources */,
+				4BF684871B8562CF00A0B68D /* Story.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B3863A51B4083C700613B81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B3863A11B4083C700613B81 /* RWDigest-Watch Extension */;
+			targetProxy = 4B3863A41B4083C700613B81 /* PBXContainerItemProxy */;
+		};
+		4B3863AF1B4083C700613B81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B3863951B4083C700613B81 /* RWDigest-Watch */;
+			targetProxy = 4B3863AE1B4083C700613B81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B3863981B4083C700613B81 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B3863991B4083C700613B81 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		4B6A509D1B3EE2BF007F3FB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B6A509E1B3EE2BF007F3FB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B3863B21B4083C700613B81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "RWDigest-Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.rwdigest.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		4B3863B31B4083C700613B81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "RWDigest-Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.rwdigest.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		4B3863B61B4083C700613B81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = RWDigest_Watch_Extension;
+				INFOPLIST_FILE = "RWDigest-Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.rwdigest.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		4B3863B71B4083C700613B81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = RWDigest_Watch_Extension;
+				INFOPLIST_FILE = "RWDigest-Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.rwdigest.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		4B6A50A11B3EE2BF007F3FB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B6A50A21B3EE2BF007F3FB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B6A50A41B3EE2BF007F3FB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RWDigest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.rwdigest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4B6A50A51B3EE2BF007F3FB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RWDigest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.rwdigest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B3863B11B4083C700613B81 /* Build configuration list for PBXNativeTarget "RWDigest-Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B3863B21B4083C700613B81 /* Debug */,
+				4B3863B31B4083C700613B81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B3863B51B4083C700613B81 /* Build configuration list for PBXNativeTarget "RWDigest-Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B3863B61B4083C700613B81 /* Debug */,
+				4B3863B71B4083C700613B81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B6A508C1B3EE2BF007F3FB7 /* Build configuration list for PBXProject "RWDigest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B6A50A11B3EE2BF007F3FB7 /* Debug */,
+				4B6A50A21B3EE2BF007F3FB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B6A50A31B3EE2BF007F3FB7 /* Build configuration list for PBXNativeTarget "RWDigest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B6A50A41B3EE2BF007F3FB7 /* Debug */,
+				4B6A50A51B3EE2BF007F3FB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B6A50891B3EE2BF007F3FB7 /* Project object */;
+}
