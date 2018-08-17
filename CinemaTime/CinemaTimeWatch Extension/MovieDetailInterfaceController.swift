@@ -92,7 +92,7 @@ class MovieDetailInterfaceController: WKInterfaceController {
   
   // MARK:
   
-  private func saveMovieTicketAndUpdateDisplay(_ movieTicket: Data) {
+  fileprivate func saveMovieTicketAndUpdateDisplay(_ movieTicket: Data) {
     DispatchQueue.main.async(execute: { () -> Void in
       do {
         try movieTicket.write(to: URL(fileURLWithPath: self.movieTicketFilePath))
@@ -103,7 +103,7 @@ class MovieDetailInterfaceController: WKInterfaceController {
     })
   }
   
-  private func showReachabilityError() {
+  fileprivate func showReachabilityError() {
     let tryAgain = WKAlertAction(title: "Try Again", style: .default, handler: { () -> Void in })
     let cancel = WKAlertAction(title: "Cancel", style: .cancel, handler: { () -> Void in })
     self.presentAlert(withTitle: "Your iPhone is not reachable.", message: "You movie ticket cannot be shown because your iPhone is not currently connected to your phone. Please ensure your iPhone is on and within range of your Watch.", preferredStyle: WKAlertControllerStyle.alert, actions:[tryAgain, cancel])
@@ -115,6 +115,20 @@ class MovieDetailInterfaceController: WKInterfaceController {
 extension MovieDetailInterfaceController {
 
   func requestTicketForPurchasedMovie(_ movie: Movie) {
-    // TODO: Update to request movie ticket image from phone
+    let session = WCSession.default()
+    if session.isReachable {
+      let message = ["movie_id": movie.id]
+      session.sendMessage(message, replyHandler: { (reply) in
+        if let movieID = reply["movie_id"] as? String,
+          let movieTicket = reply["movie_ticket"] as? Data,
+          movieID == self.movie.id {
+          self.saveMovieTicketAndUpdateDisplay(movieTicket)
+        }
+      }) { (error) in
+        print("ERROR: \(error.localizedDescription)")
+      }
+    } else {
+      self.showReachabilityError()
+    }
   }
 }

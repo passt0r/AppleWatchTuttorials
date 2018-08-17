@@ -91,4 +91,12 @@ extension ExtensionDelegate: WCSessionDelegate {
     }
   }
   
+  func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
+    if let movieID = userInfo["movie_id"] as? String,
+      let rating = userInfo["rating"] as? String {
+      TicketOffice.sharedInstance.rateMovie(movieID,
+                                            rating: rating)
+    }
+  }
+  
 }

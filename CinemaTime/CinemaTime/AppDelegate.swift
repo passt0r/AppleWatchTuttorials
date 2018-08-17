@@ -120,4 +120,21 @@ extension AppDelegate: WCSessionDelegate {
       })
     }
   }
+  
+  func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
+    if let movieID = userInfo["movie_id"] as? String,
+      let rating = userInfo["rating"] as? String {
+      TicketOffice.sharedInstance.rateMovie(movieID, rating: rating)
+    }
+  }
+  
+  func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+    if let movieID = message["movie_id"] as? String {
+      if let movieTicket = QRCode(movieID) {
+        let reply: [String:Any] = ["movie_id":movieID,
+                                   "movie_ticket":movieTicket.PNGData]
+        replyHandler(reply)
+      }
+    }
+  }
 }
